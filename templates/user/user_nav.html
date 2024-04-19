@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="topnav" style="overflow: hidden; background-color: #333;">
+  <a class="active" href="#home" style="float: left; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px; background-color: #04AA6D;">Home</a>
+  <a href="#news" style="float: left; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;">News</a>
+  <a href="#contact" style="float: left; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;">Contact</a>
+  <a href="#about" style="float: left; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;">About</a>
+
+  <!-- Dropdown menu -->
+  <div class="dropdown" style="float: left; overflow: hidden;">
+    <button class="dropbtn" style="font-size: 17px; border: none; outline: none; color: white; padding: 14px 16px; background-color: inherit; margin: 0;">Dropdown</button>
+    <div class="dropdown-content" style="display: none; position: absolute; background-color: #333; min-width: 160px; z-index: 1;">
+      <a href="#" style="float: none; color: white; padding: 12px 16px; text-decoration: none; display: block; text-align: left;">Link 1</a>
+      <a href="#" style="float: none; color: white; padding: 12px 16px; text-decoration: none; display: block; text-align: left;">Link 2</a>
+      <a href="#" style="float: none; color: white; padding: 12px 16px; text-decoration: none; display: block; text-align: left;">Link 3</a>
+    </div>
+  </div>
+
+  <!-- Search button -->
+  <div class="search-container" style="float: right;">
+    <form action="/search" method="GET">
+      <input type="text" placeholder="Search.." name="search" style="padding: 6px; margin-top: 8px; font-size: 17px; border: none;">
+      <button type="submit" style="float: right; padding: 6px 10px; margin-top: 8px; margin-right: 16px; background: #ddd; font-size: 17px; border: none; cursor: pointer;">Search</button>
+    </form>
+  </div>
+</div>
+
+<script>
+// JavaScript to handle showing the dropdown content on hover
+document.querySelector('.dropdown').addEventListener('mouseover', function() {
+  this.querySelector('.dropdown-content').style.display = 'block';
+});
+
+document.querySelector('.dropdown').addEventListener('mouseout', function() {
+  this.querySelector('.dropdown-content').style.display = 'none';
+});
+</script>
+
+</body>
+</html>
